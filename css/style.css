@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffffff;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* Navbar */
@@ -180,7 +180,7 @@ body {
 }
 
 .about .row .content h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 1rem;
 }
 
@@ -189,6 +189,50 @@ body {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 1.6;
+}
+
+/* Menu Section */
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.menu h2 span {
+  color: var(--primary);
+}
+
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap; /* supaya tidak mengatur responsive lagi */
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menu .row .menu-card-title {
+  margin-top: 1.5rem auto 0.5rem;
 }
 
 /* Media Queries */
@@ -257,11 +301,17 @@ body {
 
   .about .row .content h3 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .about .row .content p {
     font-size: 1.6rem;
+  }
+
+  /* Menu Section Tablet */
+
+  .menu p {
+    font-size: 1.3rem;
   }
 }
 
